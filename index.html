@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Karan | Game Developer</title>
+<title>CodeKaran | Game Developer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,42 +13,56 @@
 <div class="container">
 
   <!-- HERO -->
-  <section class="hero">
+  <section id="hero" class="screen active">
     <h1>CODEKARAN</h1>
     <p>Lead Game Developer</p>
     <p class="sub">[ Unity | Unreal | Multiplayer Systems ]</p>
-  </section>
-
-  <!-- PROJECTS -->
-  <section>
-    <h2>SELECT PROJECT</h2>
 
     <div class="menu">
-      <a href="https://codekarangames.dev/projects/ecorun" class="menu-item">EcoRun</a>
-      <a href="#" class="menu-item">Yaaro Ki Rasoi</a>
-      <a href="#" class="menu-item">BullBash</a>
-      <a href="#" class="menu-item">Tank Shooter</a>
+      <div class="menu-item" onclick="showScreen('projects')">> PROJECTS</div>
+      <div class="menu-item" onclick="showScreen('about')">> ABOUT</div>
+      <div class="menu-item" onclick="showScreen('contact')">> CONTACT</div>
     </div>
   </section>
 
-  <!-- TECH -->
-  <section>
-    <h2>ABILITIES</h2>
-    <ul class="stats">
-      <li>Gameplay Architecture</li>
-      <li>Multiplayer Systems</li>
-      <li>Performance Optimization</li>
-      <li>Live Game Systems</li>
-    </ul>
+  <!-- PROJECTS -->
+  <section id="projects" class="screen">
+    <h2>PROJECTS</h2>
+
+    <div class="card">EcoRun — Scalable Endless Runner</div>
+    <div class="card">Yaaro Ki Rasoi — UE5 Simulation</div>
+    <div class="card">BullBash — RTS Multiplayer</div>
+    <div class="card">Tank Shooter — 4v4 Multiplayer</div>
+
+    <button onclick="showScreen('hero')">← BACK</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="screen">
+    <h2>ABOUT</h2>
+
+    <p>
+      I design and ship high-performance gameplay systems for mobile and PC—combining strong architecture, player-centric design, and production-ready execution.
+    </p>
+
+    <p>
+      My focus is on multiplayer systems, gameplay architecture, and scalable design.
+    </p>
+
+    <button onclick="showScreen('hero')">← BACK</button>
   </section>
 
   <!-- CONTACT -->
-  <section>
+  <section id="contact" class="screen">
     <h2>CONTACT</h2>
-    <p>hello@codekarangames.dev</p>
+
+    <p>Email: hello@codekarangames.dev</p>
+
+    <button onclick="showScreen('hero')">← BACK</button>
   </section>
 
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
