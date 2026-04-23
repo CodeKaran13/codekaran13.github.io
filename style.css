@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
 
 :root {
   --bg: #020617;
@@ -21,7 +21,7 @@
 
 .meta {
   color: var(--muted);
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 16px;
 }
 
@@ -39,7 +39,7 @@ body {
     #020617;
 
   color: var(--text);
-  font-family: 'VT323', monospace;
+  font-family: 'Share Tech Mono', monospace;
   margin: 0;
 
   font-size: 22px;
@@ -48,7 +48,7 @@ body {
 
 p {
   color: var(--muted);
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 18px;
 }
@@ -60,7 +60,7 @@ p {
   border-left: 4px solid var(--accent);
   background: rgba(59, 130, 246, 0.04);
 
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6;
   color: var(--text);
 
@@ -91,7 +91,7 @@ p {
 .navbar a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   position: relative;
   transition: 0.25s ease;
 }
@@ -166,13 +166,12 @@ h2::after {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 /* SECTIONS */
 section {
-  max-width: 900px;
   margin: auto;
   padding: 100px 20px;
 }
@@ -283,7 +282,7 @@ ul {
   
   color: var(--accent);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   
   transition: all 0.25s ease;
 }
@@ -307,7 +306,6 @@ ul {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 
 @media (max-width: 768px) {
