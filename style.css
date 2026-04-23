@@ -316,6 +316,25 @@ ul {
   transform: translateY(0);
 }
 
+.footer {
+  margin-top: 80px;
+  padding: 40px 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.015);
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: var(--muted);
+}
 
 @media (max-width: 768px) {
 
