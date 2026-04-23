@@ -14,15 +14,19 @@ function openProject(project)
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar a");
 
-window.addEventListener("scroll", () =>
+function updateActiveNav()
 {
   let current = "";
 
   sections.forEach(section =>
   {
-    const sectionTop = section.offsetTop - 150;
+    const sectionTop = section.offsetTop - 180;
+    const sectionHeight = section.offsetHeight;
 
-    if (window.scrollY >= sectionTop)
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    )
     {
       current = section.getAttribute("id");
     }
@@ -30,18 +34,17 @@ window.addEventListener("scroll", () =>
 
   navLinks.forEach(link =>
   {
-    // Remove active class from all links
     link.classList.remove("active");
-  });
 
-  navLinks.forEach(link =>
-  {
-    if (link.getAttribute("href") === "#" + current)
+    if (link.getAttribute("href") === `#${current}`)
     {
       link.classList.add("active");
     }
   });
-});
+}
+
+window.addEventListener("scroll", updateActiveNav);
+window.addEventListener("load", updateActiveNav);
 
 // Fade-in animation on scroll
 const observer = new IntersectionObserver((entries) =>
