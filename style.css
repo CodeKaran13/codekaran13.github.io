@@ -329,56 +329,62 @@ ul {
 
   /* HERO */
   .hero {
-    padding: 90px 20px 60px;
+    padding: 100px 20px 70px;
   }
-
+  
   .hero h1 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.6;
   }
-
+  
   .subtitle {
-    font-size: 18px;
-    margin-top: 18px;
+    font-size: 22px;
+    margin-top: 20px;
   }
-
+  
   .sub {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  
+  /* SECTION HEADINGS */
+  h2 {
     font-size: 16px;
     line-height: 1.6;
   }
-
-  /* HEADINGS */
-  h2 {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
+  
   h3 {
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 1.5;
   }
-
-  /* TEXT */
+  
+  /* BODY TEXT */
   p {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+  
+  /* META TEXT */
+  .meta {
     font-size: 18px;
-    line-height: 1.7;
   }
-
-  /* SECTIONS */
-  section {
-    padding: 70px 18px;
-  }
-
-  /* HIGHLIGHT */
-  .highlight-line {
+  
+  /* NAVBAR */
+  .navbar a {
     font-size: 18px;
-    padding: 18px;
   }
-
+  
   /* BUTTONS */
   .button {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
+    font-size: 18px;
+    padding: 14px 18px;
+  }
+  
+  /* HIGHLIGHT SECTION */
+  .highlight-line {
+    font-size: 22px;
+    line-height: 1.8;
+    padding: 20px;
   }
 
   /* CONTACT LINKS */
